@@ -1,0 +1,17 @@
+{
+  "name": "hermes-blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "framer:list": "npx -y node@22 framer/listCollections.mjs",
+    "framer:add": "npx -y node@22 framer/addBlogPost.mjs",
+    "framer:publish:status": "npx -y node@22 framer/publishSite.mjs status",
+    "framer:publish:preview": "npx -y node@22 framer/publishSite.mjs preview",
+    "framer:publish:live": "npx -y node@22 framer/publishSite.mjs live",
+    "framer:add:publish": "npx -y node@22 framer/addAndPublishBlogPost.mjs"
+  },
+  "dependencies": {
+    "framer-api": "^0.1.4"
+  }
+}
